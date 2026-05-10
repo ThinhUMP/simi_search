@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "simi-search"
-version = "0.1.0"
+version = "0.1.1"
 description = "Ligand similarity search benchmarking on LIT-PCBA."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-pythonf = ">=3.11"
 dependencies = []
 authors = [
   { name = "ThinhUMP" }
