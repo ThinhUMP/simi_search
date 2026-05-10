@@ -5,6 +5,7 @@ Installation
 ------------
 
 Choose the installation method that matches your workflow.
+Simi Search targets Python 3.11.
 
 Option 1: PyPI
 ~~~~~~~~~~~~~~

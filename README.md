@@ -22,6 +22,8 @@ that ligand similarity can be evaluated directly.
 
 ## Installation
 
+Simi Search targets Python 3.11.
+
 Install the base package:
 
 ```bash

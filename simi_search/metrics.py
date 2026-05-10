@@ -43,7 +43,7 @@ def roc_auc(labels: Sequence[int], scores: Sequence[float]) -> float:
     if positives == 0 or negatives == 0:
         return 0.0
 
-    pairs = sorted(zip(scores, labels), key=lambda item: item[0])
+    pairs = sorted(zip(scores, labels, strict=True), key=lambda item: item[0])
     rank_sum = 0.0
     rank = 1
     index = 0
@@ -99,7 +99,7 @@ def bedroc(labels: Sequence[int], alpha: float = 20.0) -> float:
 
 
 def compute_ranking_metrics(labels: Sequence[int], scores: Sequence[float]) -> RankingMetrics:
-    ranked = sorted(zip(scores, labels), key=lambda item: item[0], reverse=True)
+    ranked = sorted(zip(scores, labels, strict=True), key=lambda item: item[0], reverse=True)
     ranked_scores = [score for score, _ in ranked]
     ranked_labels = [label for _, label in ranked]
     ef1, top1_actives = enrichment_factor(ranked_labels, 0.01)
