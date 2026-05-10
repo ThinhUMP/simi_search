@@ -18,6 +18,7 @@ All notable changes to `simi-search` are documented here.
 - Sphinx/RST documentation with scientific styling.
 - Packaging and release infrastructure for PyPI, conda, Docker, GitHub Actions, Dependabot, and Read the Docs.
 - Apache-2.0 package metadata aligned with the repository license using a PEP 639 license expression.
+- Current GitHub Action and Docker base image updates from Dependabot PRs.
 
 ### Changed
 
