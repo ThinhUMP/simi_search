@@ -1,0 +1,18 @@
+__pycache__/
+.DS_Store
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+docs/_build/
+dist/
+build/
+*.egg-info/
+.venv/
+venv/
+
+# Local benchmark artifacts are large and reproducible.
+data/
+results/

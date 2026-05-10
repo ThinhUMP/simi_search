@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simi-search"
+version = "0.1.0"
+description = "Ligand similarity search benchmarking on LIT-PCBA."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+authors = [
+  { name = "ThinhUMP" }
+]
+license = "Apache-2.0"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2",
+  "ruff>=0.8",
+]
+docs = [
+  "sphinx>=7.4,<9",
+  "sphinx-rtd-theme>=2.0",
+]
+rdkit = [
+  "rdkit>=2023.9",
+]
+all = [
+  "sphinx>=7.4,<9",
+  "sphinx-rtd-theme>=2.0",
+  "rdkit>=2023.9",
+]
+
+[project.scripts]
+download-lit-pcba = "simi_search.scripts.download_lit_pcba:main"
+benchmark-similarity = "simi_search.scripts.benchmark_similarity:main"
+
+[project.urls]
+Homepage = "https://github.com/ThinhUMP/simi_search"
+Issues = "https://github.com/ThinhUMP/simi_search/issues"
+Documentation = "https://simi-search.readthedocs.io/"
+
+[tool.setuptools.packages.find]
+include = ["simi_search*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
