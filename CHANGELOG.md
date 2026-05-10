@@ -17,7 +17,7 @@ All notable changes to `simi-search` are documented here.
 - OOP modules for fingerprints, similarity search, benchmark orchestration, metrics, and domain models.
 - Sphinx/RST documentation with scientific styling.
 - Packaging and release infrastructure for PyPI, conda, Docker, GitHub Actions, Dependabot, and Read the Docs.
-- Apache-2.0 package metadata aligned with the repository license.
+- Apache-2.0 package metadata aligned with the repository license using a PEP 639 license expression.
 
 ### Changed
 
