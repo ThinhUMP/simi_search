@@ -27,14 +27,14 @@ dev = [
   "ruff>=0.8",
 ]
 docs = [
-  "sphinx>=7.4,<9",
+  "sphinx>=7.4,<10",
   "sphinx-rtd-theme>=2.0",
 ]
 rdkit = [
   "rdkit>=2023.9",
 ]
 all = [
-  "sphinx>=7.4,<9",
+  "sphinx>=7.4,<10",
   "sphinx-rtd-theme>=2.0",
   "rdkit>=2023.9",
 ]
